@@ -34,6 +34,7 @@ wheels/
 
 # Streamlit
 .streamlit/
+.streamlit/secrets.toml
 .cache/
 
 # Environment variables

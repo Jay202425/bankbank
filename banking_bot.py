@@ -3,8 +3,8 @@ import pandas as pd
 import csv
 from mistralai import Mistral
 
-# Initialize Mistral client
-api_key = "wCCxoz0TFWggsnciVVj4AsQVnjg75a5c"
+# Initialize Mistral client with API key from Streamlit secrets
+api_key = st.secrets.get("MISTRAL_API_KEY", "wCCxoz0TFWggsnciVVj4AsQVnjg75a5c")
 client = Mistral(api_key=api_key)
 model = "mistral-large"
 
